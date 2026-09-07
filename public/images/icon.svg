@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <title>ConectaWeb — ícone</title>
+  <circle cx="100" cy="100" r="68" fill="none" stroke="#2f6f5e" stroke-width="24"
+    stroke-linecap="round" stroke-dasharray="320.44 106.81" transform="rotate(45 100 100)" />
+  <circle cx="168" cy="100" r="15" fill="#173d33" />
+</svg>
