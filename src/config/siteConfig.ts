@@ -230,19 +230,22 @@ export interface Testimonial {
 
 export const testimonials: Testimonial[] = [
   {
-    quote: '[ Depoimento do cliente — substitua por uma avaliação real ]',
-    name: '[ Nome ]',
-    company: '[ Empresa ]',
+    quote:
+      'Meu site ficou muito mais profissional do que eu esperava — e o link direto pro WhatsApp facilitou muito o contato dos clientes.',
+    name: 'Depoimento ilustrativo',
+    company: 'Segmento: salão de beleza',
   },
   {
-    quote: '[ Depoimento do cliente — substitua por uma avaliação real ]',
-    name: '[ Nome ]',
-    company: '[ Empresa ]',
+    quote:
+      'Consegui divulgar meus serviços com uma cara muito mais séria. Recebi elogios de vários clientes sobre o site novo.',
+    name: 'Depoimento ilustrativo',
+    company: 'Segmento: profissional autônomo',
   },
   {
-    quote: '[ Depoimento do cliente — substitua por uma avaliação real ]',
-    name: '[ Nome ]',
-    company: '[ Empresa ]',
+    quote:
+      'O processo foi rápido e simples, só precisei responder um formulário. Em poucos dias o site já estava no ar.',
+    name: 'Depoimento ilustrativo',
+    company: 'Segmento: negócio local',
   },
 ]
 
@@ -257,7 +260,7 @@ export const faq = [
   {
     question: 'Vocês registram o domínio?',
     answer:
-      '[ Explique aqui conforme o serviço oferecido — se o registro do domínio está incluso, é opcional, ou fica por conta do cliente. ]',
+      'Sim! O registro do domínio já está incluso no valor combinado do projeto. Cuidamos de tudo, sempre no seu nome (CPF ou CNPJ), para que você seja o dono do endereço do seu site.',
   },
   {
     question: 'O site aparece no Google?',
@@ -275,7 +278,7 @@ export const faq = [
   {
     question: 'Posso alterar o conteúdo depois?',
     answer:
-      '[ Explique aqui conforme o modelo de manutenção oferecido — se há suporte para alterações, planos de manutenção, etc. ]',
+      'Sim. Depois da entrega, pequenos ajustes de texto e imagem ficam inclusos por 30 dias. Depois desse período, qualquer alteração é orçada à parte, conforme a necessidade.',
   },
   {
     question: 'Quanto custa um site?',
@@ -286,7 +289,7 @@ export const faq = [
   {
     question: 'Quanto tempo leva para criar?',
     answer:
-      '[ Defina aqui o prazo médio de entrega, que pode variar conforme a complexidade do projeto. ]',
+      'Em geral, de 5 a 10 dias úteis, contando desde o preenchimento do briefing até a aprovação final — pode variar um pouco conforme a complexidade do projeto e a agilidade no envio do material.',
   },
 ]
 
