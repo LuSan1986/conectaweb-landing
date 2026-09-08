@@ -1,6 +1,6 @@
 # Handoff — Projeto ConectaWeb
 
-Última atualização: 2026-09-07
+Última atualização: 2026-09-07 (v2 — Google Ads adicionado)
 
 Este arquivo resume o estado atual do projeto ConectaWeb (site + automação de atendimento) para
 continuar o trabalho em outra conversa com o Claude, sem perder o contexto. Cole este arquivo (ou
@@ -56,6 +56,31 @@ de 8 etapas, rota `/briefing`, sem link no menu — só quem tem o link acessa).
 
 Esse processo de 6 etapas está documentado na página "Fluxo de Clientes ConectaWeb" (artefato
 Claude), que também serve para acompanhar o andamento de cada cliente.
+
+## Google Ads / Marketing
+
+- Foi criada uma conta nova e dedicada no Google Ads só para a ConectaWeb, separada da conta/MCC do
+  GetDashia (que fica em outra conta, "MCC de Automações Luciano" / 453-482-8300).
+- Conta: **ConectaWeb**, ID 258-841-7691, e-mail lucianosantana48@gmail.com. Forma de pagamento:
+  cartão Santander, validado, modo pós-pagamento. Sem forma de pagamento alternativa cadastrada
+  (opcional, não bloqueia nada).
+- Campanha ativa: **"ConectaWeb - Pesquisa - Brasil"** — tipo Pesquisa, rede só Google Pesquisa
+  (sem Display/parceiros), local Brasil, idioma Português, orçamento R$ 10,00/dia, IA Max
+  desativada (sem personalização automática de texto nem expansão de URL).
+- Meta da campanha: **"Cliques de saída"** — usada como proxy do clique no botão do WhatsApp, já
+  que o WhatsApp é o único link externo (wa.me) do site. Estratégia de lances: Maximizar
+  conversões.
+- Grupo de anúncios "Criação de Site" com 8 palavras-chave (frase, tema criação/desenvolvimento de
+  site), 1 anúncio responsivo de pesquisa com 8 títulos, 4 descrições e 4 frases de destaque
+  (Domínio Incluso, Suporte pelo WhatsApp, Entrega em 5 a 10 Dias, Design Personalizado).
+- A tag do Google (gtag.js, ID **AW-18437040361**) foi adicionada no `<head>` do `index.html`
+  (script inline, cobre o site inteiro por ser SPA) e confirmada no ar em produção — é o que
+  permite o Google Ads medir os cliques de saída como conversão.
+- Pendências de marketing: acompanhar métricas depois de alguns dias (cliques, custo, conversões de
+  saída) e ajustar palavras-chave/orçamento conforme performance. Avaliar se "Cliques de saída"
+  está sendo uma medida precisa o suficiente do interesse real, ou se vale configurar um evento de
+  conversão mais específico (só o clique no botão do WhatsApp, via gtag customizado) caso o site
+  passe a ter outros links externos que "sujem" essa métrica.
 
 ## Decisões de negócio já tomadas
 
