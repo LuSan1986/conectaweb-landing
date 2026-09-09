@@ -88,7 +88,7 @@ export const portfolioProjects: PortfolioProject[] = [
     category: 'beleza',
     description:
       'Site institucional com galeria, serviços, tabela de preços e WhatsApp integrado.',
-    demoUrl: 'https://claude.ai/code/artifact/6118f2b2-3a56-4213-9359-2fae18c27943',
+    demoUrl: 'https://salao-demo-conectaweb.vercel.app',
     image: '/images/portfolio-salao.jpg',
     placeholder: false,
   },
