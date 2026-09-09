@@ -1,6 +1,7 @@
 import { useId, useState } from 'react'
 import clsx from 'clsx'
 import { faq, waLink, whatsappMessages } from '../config/siteConfig'
+import { trackWhatsAppClick } from '../config/conversionTracking'
 import Reveal from '../components/Reveal'
 import SectionHeading from '../components/SectionHeading'
 import { ChevronDownIcon } from '../components/icons'
@@ -45,6 +46,7 @@ function FaqItem({
               href={waLink(whatsappMessages.default)}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={trackWhatsAppClick}
               className="inline-block text-sm font-semibold text-accent-ink mt-3 hover:underline"
             >
               Fale conosco para receber uma proposta →

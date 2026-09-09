@@ -1,4 +1,5 @@
 import { waLink, whatsappMessages } from '../config/siteConfig'
+import { trackWhatsAppClick } from '../config/conversionTracking'
 import Reveal from '../components/Reveal'
 import { WhatsAppIcon } from '../components/icons'
 
@@ -30,6 +31,7 @@ export default function FinalCta() {
               href={waLink(whatsappMessages.finalCta)}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={trackWhatsAppClick}
               className="inline-flex items-center justify-center gap-2 bg-white text-accent-ink hover:bg-paper font-semibold text-lg px-9 py-4 rounded-full transition-colors shadow-lift"
             >
               <WhatsAppIcon className="h-5 w-5" />

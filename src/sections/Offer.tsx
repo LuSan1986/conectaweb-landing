@@ -1,4 +1,5 @@
 import { offerItems, waLink, whatsappMessages } from '../config/siteConfig'
+import { trackWhatsAppClick } from '../config/conversionTracking'
 import Reveal from '../components/Reveal'
 import SectionHeading from '../components/SectionHeading'
 import { CheckIcon, WhatsAppIcon } from '../components/icons'
@@ -34,6 +35,7 @@ export default function Offer() {
                 href={waLink(whatsappMessages.offer)}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={trackWhatsAppClick}
                 className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-ink text-white font-semibold text-base px-7 py-4 rounded-full transition-colors shadow-lift"
               >
                 <WhatsAppIcon className="h-5 w-5" />

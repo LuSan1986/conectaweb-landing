@@ -1,4 +1,5 @@
 import { waLink, whatsappMessages } from '../config/siteConfig'
+import { trackWhatsAppClick } from '../config/conversionTracking'
 import { ArrowRightIcon, WhatsAppIcon } from '../components/icons'
 import Img from '../components/Img'
 import Reveal from '../components/Reveal'
@@ -40,6 +41,7 @@ export default function Hero() {
                 href={waLink(whatsappMessages.hero)}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={trackWhatsAppClick}
                 className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-ink text-white font-semibold text-base px-7 py-4 rounded-full transition-colors shadow-lift"
               >
                 <WhatsAppIcon className="h-5 w-5" />

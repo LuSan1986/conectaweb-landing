@@ -1,4 +1,5 @@
 import { waLink, whatsappMessages } from '../config/siteConfig'
+import { trackWhatsAppClick } from '../config/conversionTracking'
 import { WhatsAppIcon } from './icons'
 
 /** Botão flutuante (desktop) + barra fixa inferior (mobile). */
@@ -10,6 +11,7 @@ export default function WhatsAppFloat() {
         href={waLink(whatsappMessages.default)}
         target="_blank"
         rel="noopener noreferrer"
+        onClick={trackWhatsAppClick}
         className="hidden md:flex fixed bottom-7 right-7 z-40 items-center justify-center h-14 w-14 rounded-full bg-whatsapp text-white shadow-lift hover:scale-105 transition-transform"
         aria-label="Falar no WhatsApp"
       >
@@ -22,6 +24,7 @@ export default function WhatsAppFloat() {
           href={waLink(whatsappMessages.default)}
           target="_blank"
           rel="noopener noreferrer"
+          onClick={trackWhatsAppClick}
           className="flex items-center justify-center gap-2 w-full bg-whatsapp text-white font-semibold text-base py-3.5 rounded-full shadow-lift"
         >
           <WhatsAppIcon className="h-5 w-5" />

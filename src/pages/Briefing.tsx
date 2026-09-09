@@ -1,5 +1,6 @@
 import { useEffect, useState, type FormEvent } from 'react'
 import { waLink } from '../config/siteConfig'
+import { trackWhatsAppClick } from '../config/conversionTracking'
 
 /**
  * Formulário de briefing — usado depois que um cliente já fechou negócio,
@@ -173,6 +174,7 @@ export default function Briefing() {
 
     if (obs) blocks.push('', '*Observações*', obs)
 
+    trackWhatsAppClick()
     window.open(waLink(blocks.join('\n')), '_blank', 'noopener,noreferrer')
   }
 

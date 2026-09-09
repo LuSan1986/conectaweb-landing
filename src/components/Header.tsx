@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { company, navLinks, waLink, whatsappMessages } from '../config/siteConfig'
+import { trackWhatsAppClick } from '../config/conversionTracking'
 import { MenuIcon, CloseIcon, WhatsAppIcon } from './icons'
 
 export default function Header() {
@@ -51,6 +52,7 @@ export default function Header() {
             href={waLink(whatsappMessages.default)}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={trackWhatsAppClick}
             className="inline-flex items-center gap-2 bg-accent hover:bg-accent-ink text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors shadow-soft"
           >
             <WhatsAppIcon className="h-4 w-4" />
@@ -87,6 +89,7 @@ export default function Header() {
             href={waLink(whatsappMessages.default)}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={trackWhatsAppClick}
             className="mt-4 inline-flex items-center justify-center gap-2 bg-accent text-white text-base font-semibold px-5 py-3.5 rounded-full"
           >
             <WhatsAppIcon className="h-5 w-5" />

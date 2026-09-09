@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { company, navLinks, social, waLink, whatsappMessages } from '../config/siteConfig'
+import { trackWhatsAppClick } from '../config/conversionTracking'
 import { WhatsAppIcon, InstagramIcon, FacebookIcon, TikTokIcon, LinkedInIcon } from './icons'
 
 const socialLinks = [
@@ -70,7 +71,7 @@ export default function Footer() {
           <h3 className="text-paper font-semibold text-sm mb-4">Contato</h3>
           <ul className="space-y-2.5 text-sm">
             <li>
-              <a href={waLink(whatsappMessages.default)} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 hover:text-paper transition-colors">
+              <a href={waLink(whatsappMessages.default)} target="_blank" rel="noopener noreferrer" onClick={trackWhatsAppClick} className="inline-flex items-center gap-2 hover:text-paper transition-colors">
                 <WhatsAppIcon className="h-4 w-4" /> WhatsApp
               </a>
             </li>

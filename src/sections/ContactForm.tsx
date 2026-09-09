@@ -1,5 +1,6 @@
 import { useState, type FormEvent } from 'react'
 import { company, waLink } from '../config/siteConfig'
+import { trackWhatsAppClick } from '../config/conversionTracking'
 import Reveal from '../components/Reveal'
 import SectionHeading from '../components/SectionHeading'
 import { WhatsAppIcon } from '../components/icons'
@@ -31,6 +32,7 @@ export default function ContactForm() {
       .filter(Boolean)
       .join('\n')
 
+    trackWhatsAppClick()
     window.open(waLink(text), '_blank', 'noopener,noreferrer')
   }
 
